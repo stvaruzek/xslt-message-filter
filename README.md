@@ -389,7 +389,8 @@ Especially if you deal with JSON messages, where JSON structure might change ove
 All popular browsers support XSLT 1.0.
 You can use it to transform XML to HTML or vice versa or process XML messages in the browser.
 I put in the repository a simple example of how to use XSLT in the browser.
-Just open `index.html` in your browser and try to modify the `message.xml` file or `filter.xslt` file.
+Just open [index.html](https://github.com/stvaruzek/xslt-message-filter/blob/main/src/index.html) in your browser
+and modify the [message.xml](https://github.com/stvaruzek/xslt-message-filter/blob/main/src/message.xml) file or [filter.xslt](https://github.com/stvaruzek/xslt-message-filter/blob/main/src/filter.xslt) file.
 
 # Main Takeaways
 * Be lazy, don't write code if you don't have to. If you can solve a problem without writing code, do it.
