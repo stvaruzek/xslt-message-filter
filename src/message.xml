@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns0:Employee xmlns:ns0="https://www.example.com/employee">
+  <ns0:Name>John</ns0:Name>
+  <ns0:Surname>Doe</ns0:Surname>
+  <ns0:Age>30</ns0:Age>
+  <ns0:Address>
+    <ns0:Street>123 Main Street</ns0:Street>
+    <ns0:City>San Francisco</ns0:City>
+    <ns0:State>CA</ns0:State>
+    <ns0:Zip>94105</ns0:Zip>
+  </ns0:Address>
+  <ns0:Email>
+    <ns0:Work>john.doe@example.com</ns0:Work>
+    <ns0:Personal>jodo@yahoo.com</ns0:Personal>
+  </ns0:Email>
+  <ns0:Phone>
+    <ns0:Home>111-111-1111</ns0:Home>
+    <ns0:Mobile>222-222-2222</ns0:Mobile>
+  </ns0:Phone>
+</ns0:Employee>
