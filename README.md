@@ -202,8 +202,8 @@ As Dimitre explains in his answer, the identity transform template is used to co
 
 > Explanation:
 > 1. The identity rule/template copies all nodes "as-is".
-> 2. The stylesheet contains a top-level `<ns:WhiteList>` element whose `<name>` children specify all white-listed element's names -- the elements that are to be preserved with their structural relationships in the document.
-> 3. The second template is overriding the identity template. It doesn't process (deletes) any element that is not white-listed and has no descendant that is white-listed.`
+> 2. The stylesheet contains a top-level `<ns:WhiteList>` element whose `<name>` children specify all whitelisted element's names -- the elements that are to be preserved with their structural relationships in the document.
+> 3. The second template is overriding the identity template. It doesn't process (deletes) any element that is not whitelisted and has no descendant that is whitelisted.`
 
 # Let's Try It Out
 Fire up your browser and go to [http://xsltransform.net/](http://xsltransform.net/) or download source code from this repository and run it locally.
@@ -261,7 +261,7 @@ Output XML:
 </ns0:Employee>
 ```
 
-You can see that the output XML contains only the white-listed elements `('ns0:Name', 'ns0:Zip')`, and the structure is preserved. `<ns0:Address>` is included in the output.
+You can see that the output XML contains only the whitelisted elements `('ns0:Name', 'ns0:Zip')`, and the structure is preserved. `<ns0:Address>` is included in the output.
 
 Try to change the whitelist elements or the input XML and see what happens.
 
@@ -325,7 +325,7 @@ And there were plenty of such events to handle.
 And the SAP RFC message had more than 100 fields.
 Classic mapping nightmare.
 Luckily,
-**the mapping from the HCM message to the SAP RFC message was always the same for each event**.
+**the mapping from the HCM message to the SAP RFC message was always the same for every field in each event**.
 
 Initially, I created a mapping service for each event,
 but as the number of events increased, I quickly realized that was a recipe for disaster.
@@ -381,7 +381,7 @@ but it is not free.
 
 # JSON Filtering
 As XML and JSON are interchangeable, you can use XSLT to filter JSON messages as well.
-You just need to convert JSON to XML, filter it using XSLT, and convert it back to JSON.
+You need to convert JSON to XML, filter it using XSLT, and convert it back to JSON.
 Sure, there are plenty of other ways to filter JSON messages, but this could be a way to do it.
 Especially if you deal with JSON messages, where JSON structure might change over time as in my case.
 
